@@ -9,7 +9,6 @@ var usersRouter = require('./routes/users');
 var myClassRouter = require('./routes/myClass');
 
 var app = express();
-var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
