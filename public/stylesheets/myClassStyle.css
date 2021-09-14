@@ -20,7 +20,7 @@ a {
   position: absolute;
 width: 120px;
 height: 108px;
-left: 17%;
+left: 14%;
 top: 10px;
 }
 .menu1
@@ -28,7 +28,7 @@ top: 10px;
     position: absolute;
     height: 30px;
     /* left: 458px; */
-    left: 30%;
+    left: 36%; 
     top: 55px;
     font-weight: bold;
     font-size: 16px;
@@ -43,7 +43,7 @@ top: 10px;
     position: absolute;
     height: 30px;
     /* left: 700px; */
-    left: 46%;
+    left: 46%;  /* 앞에 메뉴랑 간격 10% */
     top: 55px;
 
     font-weight: bold;
@@ -57,7 +57,7 @@ top: 10px;
 {
     position: absolute;
     height: 30px;
-    left: 61%;
+    left: 56%; /* 앞에 메뉴랑 간격 10% */
     top: 55px;
 
     font-weight: bold;
@@ -72,7 +72,7 @@ top: 10px;
 {
     position: absolute;
     height: 15px;
-    right: 13%;
+    right: 14%;
     top: 55px;
 
     font-weight: bold;
@@ -86,7 +86,7 @@ top: 10px;
   .title{
     position: absolute;
     top: 166px;
-    left: 17%;;
+    left: 14%;;
     font-family: Noto Sans KR;
     font-style: normal;
     font-weight: bold;
@@ -101,7 +101,7 @@ top: 10px;
   .who_join{
     position: absolute;
     height: 43px;
-    left: 17%;
+    left: 14%;
     top: 249px;
     
     font-family: Noto Sans KR;
@@ -117,9 +117,9 @@ top: 10px;
 
   .search_box{
     position: absolute;
-    width: 70%;
+    width: 72%;
     height: 100px;
-    left: 17%;
+    left: 14%;
     top: 348px;
     
     background: #F6F8C2;
@@ -134,7 +134,7 @@ top: 10px;
     
     font-family: Noto Sans KR;
     font-style: normal;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 30px;
     line-height: 43px;
     text-align: right;
@@ -152,7 +152,7 @@ top: 10px;
     border-radius: 5px;
     font-family: Noto Sans KR;
     font-style: normal;
-    font-weight: 500;
+    font-weight: normal;
     font-size: 20px;
     text-align: left;
     padding-left: 2%;
@@ -171,7 +171,7 @@ top: 10px;
 
     font-family: Noto Sans KR;
     font-style: normal;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 20px;
     cursor: pointer;
   }
@@ -181,9 +181,9 @@ top: 10px;
     border-top: 5px solid #000000;
     border-bottom: 3px solid #797979;
     height: fit-content;
-    left: 17%;
+    left: 14%;
     top: 545px; 
-    width: 70%;
+    width: 72%;
     margin-bottom: 100px;
   }
 
@@ -210,3 +210,90 @@ top: 10px;
     padding-top: 30px;
     padding-bottom: 30px;
   }
+
+
+/* 클래스 만드는 폼 */
+.modal{
+  position: absolute;
+  height: 50%;
+  width: 42%;
+  
+  left: 29%;
+  top: 25%;
+
+  padding: 30px;
+  border-radius: 30px;
+  border: 3px solid #000000;
+  background: #FEFEFE;
+}
+
+form {
+  border: 1px solid salmon;
+  padding: 30px;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#makeClass_text{
+  font-family: Noto Sans KR;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: left;
+  font-style: normal;
+  color: #000000;
+  margin: 20px;
+}
+
+.button_container{
+  bottom: 100%;
+  padding: 14px 20px;
+  border: none;
+  float: right;
+}
+
+#cancel_button{
+  background-color: #FEFEFE;
+  border: none;
+  cursor: pointer;
+  margin-right: 30px
+  ;  
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  color: #333333;
+}
+
+#classMake_button{
+  background-color: #FEFEFE;
+  border: none;
+  cursor: pointer;
+  right: 0%;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  color: #686868;
+  
+
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+}

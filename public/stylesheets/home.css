@@ -20,15 +20,14 @@ a {
   position: absolute;
 width: 120px;
 height: 108px;
-left: 262px;
+left: 14%;
 top: 10px;
 }
 .menu1
 {
     position: absolute;
-    width: 117px;
     height: 30px;
-    left: 458px;
+    left: 36%; 
     top: 55px;
     font-weight: bold;
     font-size: 16px;
@@ -41,9 +40,8 @@ top: 10px;
 .menu2
 {
     position: absolute;
-    width: 107px;
     height: 30px;
-    left: 700px;
+    left: 46%;  /* 앞에 메뉴랑 간격 10% */
     top: 55px;
 
     font-weight: bold;
@@ -56,9 +54,8 @@ top: 10px;
 .menu3
 {
     position: absolute;
-    width: 222px;
     height: 30px;
-    left: 931px;
+    left: 56%; /* 앞에 메뉴랑 간격 10% */
     top: 55px;
 
     font-weight: bold;
@@ -66,15 +63,13 @@ top: 10px;
     line-height: 30px;
 
     color: #000000;
-
-
 }
 .login
 {
     position: absolute;
     width:250px;
     height: 30px;
-    left: 1290px;
+    right: 10%;
     top: 55px;
 
     font-weight: bold;
@@ -89,7 +84,7 @@ top: 10px;
     position: absolute;
     width:65px;
     height: 15px;
-    left: 1380px;
+    right: 14%;
     top: 55px;
 
     font-weight: bold;
@@ -97,4 +92,15 @@ top: 10px;
     line-height: 30px;
 
     color: #000000;
+}
+
+.search_box{
+  position: absolute;
+  width: 72%;
+  height: 100px;
+  left: 14%;
+  top: 348px;
+  
+  background: #F6F8C2;
+  border-radius: 20px;
 }
