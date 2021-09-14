@@ -1,6 +1,16 @@
 body {
-  padding: 50px;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width : 100%;
+  display: block;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+html{
+  position: relative;
+  height: 1700px;
 }
 
 a {
@@ -23,16 +33,19 @@ height: 108px;
 left: 14%;
 top: 10px;
 }
+
 .menu1
 {
     position: absolute;
-    height: 30px;
+  width : 160px;
+    height: 32px;
     left: 36%; 
-    top: 55px;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 30px;
-
+    top: 39px;  
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
     color: #000000;
     
 }
@@ -40,58 +53,74 @@ top: 10px;
 .menu2
 {
     position: absolute;
+  width : 127px;
     height: 30px;
     left: 46%;  /* 앞에 메뉴랑 간격 10% */
-    top: 55px;
-
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 30px;
-
+    top: 39px;
+  
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
     color: #000000;
 
 }
 .menu3
 {
     position: absolute;
-    height: 30px;
+  width : 86px;
+    height: 32px;
     left: 56%; /* 앞에 메뉴랑 간격 10% */
-    top: 55px;
-
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 30px;
+    top: 39px;
+  
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
 
     color: #000000;
 }
 .login
 {
     position: absolute;
-    width:250px;
-    height: 30px;
+    width: 56px;
+   height: 29px;
     right: 10%;
-    top: 55px;
-
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 30px;
-
-    color: #BE94D1;
-    text-decoration: underline;
+    top: 40px;
+  
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #000000;
 }
 .signUp
 {
     position: absolute;
-    width:65px;
-    height: 15px;
+    width:74px;
+    height: 29px;
     right: 14%;
-    top: 55px;
-
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 30px;
-
-    color: #000000;
+    top: 40px;
+  
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #000000;
 }
 
 .search_box{
@@ -103,4 +132,170 @@ top: 10px;
   
   background: #F6F8C2;
   border-radius: 20px;
+}
+=======
+
+.foot_hu{
+  background-color: #FAFAFA;
+  position: absolute;
+  width:1920px;
+  height: 170px;
+  bottom: 30px;
+  right: -130px;
+}
+
+.tn{
+  color: #884BA5;
+  font-size: 36px;
+  line-height: 30px;
+}
+
+.tou{
+  color: #9E9E9E;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.pp{
+  color: #9E9E9E;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.ask{
+  color: #9E9E9E;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.info_policy{
+  color: #000000;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.txt_copyright{
+  color: #9E9E9E;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+/* footer css 시작*/
+footer{
+  position: absolute;
+  width: 1920px;
+  height: 200px;
+  left: 0px;
+  top: 1500px;
+  background: #FAFAFA;
+}
+
+.logo{
+  position: absolute;
+  width: 202px;
+  height: 52px;
+left: 259px;
+top: 20px;
+}
+
+.githubpic{
+  position: absolute;
+  left: 1604px;
+  top: 138px;
+}
+
+.teamname{
+  position: absolute;
+width: 100px;
+height: 24px;
+left: 260px;
+top: 116px;
+
+font-family: "Noto Sans KR";
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 150%;
+
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+
+.copyright{
+  position: absolute;
+width: 141px;
+height: 21px;
+left: 260px;
+top: 145px;
+
+font-family: "Noto Sans";
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 150%;
+
+display: flex;
+align-items: center;
+
+color: #9E9E9E;
+}
+
+.agree1{
+  position: absolute;
+width: 60px;
+height: 21px;
+left: 1285px;
+top: 145px;
+
+font-family: "Noto Sans";
+font-style: normal;
+font-weight: 200;
+font-size: 14px;
+line-height: 150%;
+
+display: flex;
+align-items: center;
+
+color: #9E9E9E;
+}
+
+.agree2{
+  position: absolute;
+width: 120px;
+height: 21px;
+left: 1370px;
+top: 145px;
+
+font-family: Noto Sans;
+font-style: normal;
+font-weight: 200;
+font-size: 14px;
+line-height: 150%;
+
+display: flex;
+align-items: center;
+
+color: #9E9E9E;
+
+}
+
+.agree3{
+  position: absolute;
+width: 60px;
+height: 21px;
+left: 1507px;
+top: 145px;
+
+font-family: Noto Sans;
+font-style: normal;
+font-weight: 200;
+font-size: 14px;
+line-height: 150%;
+
+display: flex;
+align-items: center;
+
+color: #9E9E9E;
 }

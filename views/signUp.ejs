@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./stylesheets/signupStyle.css"/>
+        <title>Hands-Up?!_회원가입</title>
+    </head>
+    <body>
+        <div id="top"></div>
+        <div class="document">
+            <label id="signUp_title">회원가입</label><br><br><br>
+            <form class="signUp_box" action="/signup" method="POST">
+                <label class="smallfont">Email</label><br>
+                <input name="email" type="text" placeholder="E-mail 입력" class="input_box" autocomplete="off" required><br><br>
+                <label class="smallfont">Password</label><br>
+                <input name="pwd" type="password" placeholder="Password 입력" class="input_box autocomplete="off required><br>
+                <input name="pwd_check" type="password" placeholder="Password 확인" class="input_box" autocomplete="off" required><br><br>
+                <label class="smallfont">학번이름 입력</label><br>
+                <input name="username" type="text" placeholder="학번이름 입력" class="input_box" autocomplete="off" required><br><br><br>
+                <div id="btn"><input type="submit" value="가입하기"  class="signUp_button"><br></div>
+            </form>
+        </div>
+    </body>
+   
+</html>
