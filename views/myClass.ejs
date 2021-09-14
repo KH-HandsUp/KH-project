@@ -5,13 +5,14 @@
     <link rel='stylesheet' href='/stylesheets/myClassStyle.css' />
   </head>
   <body>
-    <div class="top">
+    <div class="header">
         <img src="/images/logo.png" onClick="location.href='/'"  alt="Avatar" class="avatars">
         <a class="menu1" onClick="location.href='/joinClass'">클래스 참여하기</a>
         <a class="menu2" onClick="location.href='/createClass'">클래스 만들기</a>
         <a class="menu3" onClick="location.href='/myClass'">내 클래스</a>
         <a class="who_login">'000' 님, 어서오세요</a>
-    </div>
+        <a class="who_join">000 님이 참여중인 클래스 입니다.</a>
+      </div>
     <div class="title">내 클래스</div>
 
     <div class="who_join">000 님이 참여중인 클래스 입니다.</div>
@@ -21,21 +22,62 @@
         <input name="search_word" type="search" placeholder="검색어를 입력하세요" id="search_input_box">
         <button id="search_button">검색</button>
     </div>
-    
-<!-- 
-    <div class="bottom">
-        <footer id = "huFoot" class="foot_hu">
-            <div class="inner_foot">
-            <img src="/images/Vector.png" class="link_logo">
-            <a class="tou">이용약관</a>
-            <a class="pp">개인정보처리방침</a>
-            <a class="ask">문의하기</a>
+
+
+
+    <body>
+      <div id="id01" class="modal">
+        <div id="makeClass_text">클래스 만들기</div>
+        <!-- 로그인 폼 -->
+        <form class="modal-content animate" action="/users/login" method="post">
+  
+          <div class="container">
+
+            <input type="text" placeholder="클래스 이름(필수)" name="className" required>
+            <input type="text" placeholder="제목" name="title" >
+            <input type="text" placeholder="강의실" name="roomName" >
+            <input type="number" placeholder="예정 인원" name="how_many" >
+            
+            <div class="button_container">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" id="cancel_button">취소</button>
+              <button type="submit" id='classMake_button'>만들기</button>
             </div>
-      
-            <div class="info_policy">Team - KH</div>
-            <small class="txt_copyright">Copyright © HandsUp</small>
-      </footer>
-    </div> -->
+          </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
     
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script> -->
+
+  <footer>
+    <div class="inner-footer">
+      <div class="left-footer">
+        <a class="logo" href="/">
+          <img class="web" src="/images/LOGO.png">
+        </a>
+        <p class="teamname">Team - KH</p>
+        <p class="copyright">Copyright © HandsUp</p>
+       </div>
+       <div class="right-footer">
+          <a class="github" href="https://github.com/111111022/KH_project.git">
+            <img class="githubpic" src="/images/github.png">
+          </a>
+          <a class="agree1">이용약관</p>
+          <a class="agree2">개인정보처리방침</p>
+          <a class="agree3">문의하기</p>
+       </div>
+      </div>
+    </div>
+  </footer>
   </body>
 </html>
