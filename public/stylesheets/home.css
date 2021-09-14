@@ -143,3 +143,123 @@ top: 10px;
   font-size: 14px;
   line-height: 30px;
 }
+
+/* footer css 시작*/
+footer{
+  position: absolute;
+  width: 1920px;
+  height: 200px;
+  left: 0px;
+  top: 1500px;
+  background: #FAFAFA;
+}
+
+.logo{
+  position: absolute;
+  width: 202px;
+  height: 52px;
+left: 259px;
+top: 20px;
+}
+
+.githubpic{
+  position: absolute;
+  left: 1604px;
+  top: 138px;
+}
+
+.teamname{
+  position: absolute;
+width: 100px;
+height: 24px;
+left: 260px;
+top: 116px;
+
+font-family: "Noto Sans KR";
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 150%;
+
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+
+.copyright{
+  position: absolute;
+width: 141px;
+height: 21px;
+left: 260px;
+top: 145px;
+
+font-family: "Noto Sans";
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 150%;
+
+display: flex;
+align-items: center;
+
+color: #9E9E9E;
+}
+
+.agree1{
+  position: absolute;
+width: 60px;
+height: 21px;
+left: 1285px;
+top: 145px;
+
+font-family: "Noto Sans";
+font-style: normal;
+font-weight: 200;
+font-size: 14px;
+line-height: 150%;
+
+display: flex;
+align-items: center;
+
+color: #9E9E9E;
+}
+
+.agree2{
+  position: absolute;
+width: 120px;
+height: 21px;
+left: 1370px;
+top: 145px;
+
+font-family: Noto Sans;
+font-style: normal;
+font-weight: 200;
+font-size: 14px;
+line-height: 150%;
+
+display: flex;
+align-items: center;
+
+color: #9E9E9E;
+
+}
+
+.agree3{
+  position: absolute;
+width: 60px;
+height: 21px;
+left: 1507px;
+top: 145px;
+
+font-family: Noto Sans;
+font-style: normal;
+font-weight: 200;
+font-size: 14px;
+line-height: 150%;
+
+display: flex;
+align-items: center;
+
+color: #9E9E9E;
+}
