@@ -21,14 +21,19 @@
     <div class="loginBoard">
       <a class="nameText">로그인</a>
       <form>
-        <div style="text-align: left; width: 60%;">
-          <input type='radio' name='user' value='student' />학생
-          <input type='radio' name='user' value='teacher' />선생님</br></br>
+        <br style="text-align: left; width: 60%;">
+
+          <div class="select">
+            <input type="radio" id="student" name="userType"><label for="student">학생</label>
+            <input type="radio" id="teacher" name="userType"><label for="teacher">선생님</label>
+       </div></br></br>
+       
           <input class='text_input' type='text' name='id' placeholder="아이디" required /></br></br></br></br></br>
           <input class='text_input' type='password' name='pwd' placeholder="비밀번호" required/></br></br>
-        </div>
+        
         <div class='loginButton' type='submit'><a style="font-family: Noto Sans KR; font-style: normal;font-size: 20px; color: black;">로그인</a></div>
       </form>
+      <a id='forgetPwd'>비밀번호가 기억나지 않나요?</a>
     </div>
     <img src="/images/Group 71.png" id="deco">
   </div>
@@ -53,4 +58,5 @@
       </div>
     </div>
   </footer>
+
 </html>
