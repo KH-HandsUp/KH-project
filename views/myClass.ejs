@@ -5,37 +5,54 @@
     <link rel='stylesheet' href='/stylesheets/myClassStyle.css' />
   </head>
   <body>
-    <div class="top">
         <img src="/images/logo.png" onClick="location.href='/'"  alt="Avatar" class="avatars">
         <a class="menu1" onClick="location.href='/joinClass'">클래스 참여하기</a>
         <a class="menu2" onClick="location.href='/createClass'">클래스 만들기</a>
         <a class="menu3" onClick="location.href='/myClass'">내 클래스</a>
         <a class="who_login">'000' 님, 어서오세요</a>
-    </div>
+        <a class="who_join">000 님이 참여중인 클래스 입니다.</a>
     <div class="title">내 클래스</div>
-
-    <div class="who_join">000 님이 참여중인 클래스 입니다.</div>
 
     <div class="search_box">
         <a id="search_text">총 클래스 0 강</a>
         <input name="search_word" type="search" placeholder="검색어를 입력하세요" id="search_input_box">
-        <button id="search_button">검색</button>
+        <button id="search_button" onclick="">검색</button>
     </div>
-    
-<!-- 
-    <div class="bottom">
-        <footer id = "huFoot" class="foot_hu">
-            <div class="inner_foot">
-            <img src="/images/Vector.png" class="link_logo">
-            <a class="tou">이용약관</a>
-            <a class="pp">개인정보처리방침</a>
-            <a class="ask">문의하기</a>
-            </div>
-      
-            <div class="info_policy">Team - KH</div>
-            <small class="txt_copyright">Copyright © HandsUp</small>
-      </footer>
-    </div> -->
+
+
+    <div class="down">
+      <table class="lists">
+          <colgroup>
+          <col width="55%">
+          <col width="25%">
+          <col width="20%">
+        </colgroup>
+          <thead style="border-bottom: 3px solid #797979;">
+            <tr>
+              <th scope="col" >클래스 이름</th>
+              <th scope="col">선생님</th>
+              <th scope="col">참여 인원</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id= 'item'  style="cursor: pointer;">
+              <td class="class_name">눈누난나 야호 00시간</td>
+              <td class="teacher_name">000 선생님</td>
+              <td class="how_manu_stu">00 명</td>
+            </tr>
+            <tr id= 'item'  style="cursor: pointer;">
+              <td class="class_name">눈누난나 야호 00시간</td>
+              <td class="teacher_name">000 선생님</td>
+              <td class="how_manu_stu">00 명</td>
+            </tr>
+            <tr id= 'item'  style="cursor: pointer;">
+              <td class="class_name">눈누난나 야호 00시간</td>
+              <td class="teacher_name">000 선생님</td>
+              <td class="how_manu_stu">00 명</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
     
   </body>
 </html>
