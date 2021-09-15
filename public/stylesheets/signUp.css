@@ -7,6 +7,8 @@ a {
   color: #00B7FF;
 }
 
+
+
 .menu1,.menu2,.menu3,.login,.signUp
 {
     cursor: pointer;
@@ -74,8 +76,6 @@ top: 10px;
     font-size: 16px;
     line-height: 30px;
 
-    color: #BE94D1;
-    text-decoration: underline;
 }
 .signUp
 {
@@ -89,7 +89,9 @@ top: 10px;
     font-size: 16px;
     line-height: 30px;
 
-    color: #000000;
+    
+    color: #BE94D1;
+    text-decoration: underline;
 }
 /* footer css 시작*/
 footer{
@@ -155,72 +157,72 @@ color: #000000;
 
 .agree1{
   position: absolute;
-width: 60px;
-height: 21px;
-right: 24%;
-top: 145px;
+  width: 60px;
+  height: 21px;
+  right: 24%;
+  top: 145px;
 
-font-family: "Noto Sans";
-font-style: normal;
-font-weight: 200;
-font-size: 14px;
-line-height: 150%;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 150%;
 
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 
-color: #9E9E9E;
+  color: #9E9E9E;
 }
 
 .agree2{
   position: absolute;
-width: 120px;
-height: 21px;
-right: 16%;
-top: 145px;
+  width: 120px;
+  height: 21px;
+  right: 16%;
+  top: 145px;
 
-font-family: Noto Sans;
-font-style: normal;
-font-weight: 200;
-font-size: 14px;
-line-height: 150%;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 150%;
 
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 
-color: #9E9E9E;
+  color: #9E9E9E;
 
 }
 
 .agree3{
   position: absolute;
-width: 60px;
-height: 21px;
-right: 12%;
-top: 145px;
+  width: 60px;
+  height: 21px;
+  right: 12%;
+  top: 145px;
 
-font-family: Noto Sans;
-font-style: normal;
-font-weight: 200;
-font-size: 14px;
-line-height: 150%;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 150%;
 
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 
-color: #9E9E9E;
+  color: #9E9E9E;
 }
 /* footer css 끝 */
 
-.middle{
+.middle2{
   width: 100%;
   height: 100%;
 
 }
 
-.loginBoard{
+.signUpBoard{
   position:absolute;
-  left: 26%;
+  left: 28%;
   top: 30%;
   width: 40%;
   height: fit-content;
@@ -232,7 +234,7 @@ color: #9E9E9E;
   padding-bottom: 200px;
 }
 
-.nameText{
+.signUpText{
   font-family: Noto Sans KR;
   font-style: normal;
   font-weight: bold;
@@ -273,7 +275,7 @@ color: #9E9E9E;
 /* 라디오 버튼 부분 끝*/
 
 
-.loginButton{
+.signUpButton{
   position: absolute;
   width: 10%;
   left: 48%;
@@ -283,37 +285,31 @@ color: #9E9E9E;
   border: 0px solid;
 
   
-    cursor: pointer;
-    text-align: center; 
+  cursor: pointer;
+  text-align: center; 
     
-    padding: 10px;
-}
-#deco{
-  position: absolute;
-  right: 22%;
-  top: 45%;
-  width: 20%;
+   padding: 10px;
 }
 
 .text_input{
   position: absolute;
-    width: 50%;
-    height: 50px;
-    background: #FFFFFF;
+  width: 50%;
+  height: 50px;
+  background: #FFFFFF;
     
-    font-family: Noto Sans KR;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
    
-    text-align: left;
-    padding-left: 2%;
-    padding-right: 2%;
-    border: none;
+  text-align: left;
+  padding-left: 2%;
+  padding-right: 2%;
+  border: none;
 
-    background: #FFFFFF;
-    box-shadow: 4px 4px 15px #E8E8E8;
-    border-radius: 20px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 15px #E8E8E8;
+  border-radius: 20px;
 
 }
 
