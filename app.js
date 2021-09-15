@@ -13,6 +13,7 @@ var signUpRouter = require('./routes/signUp');
 var classInRouter = require('./routes/classIn');
 var chatRouter = require('./routes/chat');
 var chooseRouter = require('./routes/choose');
+var chatTeacherRouter = require('./routes/chatTeacher');
 var app = express();
 
 sequelize.sync({force: false}).then(() => {
@@ -39,6 +40,7 @@ app.use('/signUp', signUpRouter);
 app.use('/classIn', classInRouter);
 app.use('/chat', chatRouter);
 app.use('/choose', chooseRouter);
+app.use('/chatTeacher', chatTeacherRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
