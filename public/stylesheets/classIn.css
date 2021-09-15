@@ -1,0 +1,437 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+  
+  a {
+    color: #00B7FF;
+  }
+  
+  
+  
+  .menu3,.login,.signUp
+  {
+      cursor: pointer;
+      font-weight: bold;
+  }
+  
+  .avatars
+  {
+    position: absolute;
+  width: 120px;
+  height: 108px;
+  left: 14%;
+  top: 10px;
+  }
+  .menu1
+  {
+      position: absolute;
+      height: 30px;
+      left: 36%; 
+      top: 55px;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: not-allowed;
+  
+      color: #9E9E9E;      
+  }
+  
+  .menu2
+  {
+      position: absolute;
+      height: 30px;
+      left: 46%;  /* 앞에 메뉴랑 간격 10% */
+      top: 55px;
+  
+      font-weight: bold;
+      font-size: 16px;
+      cursor: not-allowed;
+    
+      color: #9E9E9E;
+  
+  }
+  .menu3
+  {
+      position: absolute;
+      height: 30px;
+      left: 56%; /* 앞에 메뉴랑 간격 10% */
+      top: 55px;
+  
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 30px;
+  
+      color: #000000;
+  }
+  .login
+  {
+      position: absolute;
+      width:250px;
+      height: 30px;
+      right: 10%;
+      top: 55px;
+  
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 30px;
+  
+      color: #BE94D1;
+      text-decoration: underline;
+  }
+  .signUp
+  {
+      position: absolute;
+      width:65px;
+      height: 15px;
+      right: 14%;
+      top: 55px;
+  
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 30px;
+  
+      color: #000000;
+  }
+  .who_login
+{
+    position: absolute;
+    height: 15px;
+    right: 14%;
+    top: 55px;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: right;
+
+    color: #000000;
+}
+
+/* footer css 시작*/
+footer{
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  left: 0px;
+  background: #FAFAFA;
+  top: 350%;
+}
+
+.logo{
+  position: absolute;
+  width: 202px;
+  height: 52px;
+left: 14%;
+top: 10%;
+}
+
+.githubpic{
+  position: absolute;
+  right: 8%;
+  top: 138px;
+}
+
+.teamname{
+  position: absolute;
+width: 100px;
+height: 24px;
+left: 14%;
+top: 116px;
+
+font-family: "Noto Sans KR";
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 150%;
+
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+
+.copyright{
+  position: absolute;
+  width: 141px;
+  height: 21px;
+  left: 14%;
+  top: 145px;
+
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+
+  display: flex;
+  align-items: center;
+
+  color: #9E9E9E;
+}
+
+.agree1{
+  position: absolute;
+width: 60px;
+height: 21px;
+right: 24%;
+top: 145px;
+
+font-family: "Noto Sans";
+font-style: normal;
+font-weight: 200;
+font-size: 14px;
+line-height: 150%;
+
+display: flex;
+align-items: center;
+
+color: #9E9E9E;
+}
+
+.agree2{
+  position: absolute;
+width: 120px;
+height: 21px;
+right: 16%;
+top: 145px;
+
+font-family: Noto Sans;
+font-style: normal;
+font-weight: 200;
+font-size: 14px;
+line-height: 150%;
+
+display: flex;
+align-items: center;
+
+color: #9E9E9E;
+
+}
+
+.agree3{
+  position: absolute;
+width: 60px;
+height: 21px;
+right: 12%;
+top: 145px;
+
+font-family: Noto Sans;
+font-style: normal;
+font-weight: 200;
+font-size: 14px;
+line-height: 150%;
+
+display: flex;
+align-items: center;
+
+color: #9E9E9E;
+}
+/* footer css 끝 */
+
+  .class_name_text{
+    position: absolute;
+    top: 166px;
+    left: 14%;;
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    
+    color: #975AB4;
+    
+  }
+
+  .teacher_name_text{
+    position: absolute;
+    height: 43px;
+    left: 14%;
+    top: 249px;
+    
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    
+    color: #000000;
+  }
+  #classCode{
+    position: absolute;
+    left: 14%;
+    top: 316px;
+    font-weight: bold; 
+    font-size: 30px; 
+    color: #000000;
+  }
+
+  #classIn_button
+  {
+    position: absolute;
+    width: fit-content;
+    right: 14%;
+    top: 332px;
+    padding: 30px;
+
+    background: #EBEBEB;
+    box-shadow: 8px 8px 15px rgba(177, 177, 177, 0.6);
+    border-radius: 20px;
+    border: none;
+    
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: #747474;
+
+    cursor: pointer;
+}
+
+#classIn_button:hover {
+    background: #F8E8FF;
+    box-shadow: 8px 8px 15px rgba(106, 71, 120, 0.6);
+    color: #000000;
+  }
+
+  .down{
+    position: absolute;
+    border-top: 5px solid #000000;
+    border-bottom: 3px solid #797979;
+    height: fit-content;
+    left: 14%;
+    top: 545px; 
+    width: 72%;
+  }
+
+  .lists{
+    width: 100%;
+    text-align: center;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 43px;
+    font-weight: 500;
+  }
+
+  .lists thead th{
+    padding: 30px;
+
+    background: #FEFFF1; 
+    font-style: normal; 
+    font-weight: bold; 
+    font-size: 30px;
+  }
+
+  .lists tbody td{
+    border-top: 3px solid #797979;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+
+  /* 실시간 수업 시작하기 버튼 클릭 후 튀어나올 그거 */
+.modal{
+    position: absolute;
+    left: 30%;
+    top: 7%;
+  
+    height: fit-content;
+    width: 40%;
+    padding: 30px;
+  
+    border-radius: 30px;
+    /* border: 3px solid #000000; */
+    background: #FEFEFE;
+  }
+  
+  .blur{
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height:350vh;
+    left: 0px;
+    top: 0px;
+    
+    background: rgba(218, 218, 218, 0.6);
+    backdrop-filter: blur(10px);
+  }
+  
+  form {
+    /* border: 1px solid salmon; */
+    padding: 30px;
+  }
+  
+  /* Full-width inputs */
+  input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    padding: 20px;
+  
+    display: inline-block;
+    background: #EFEFEF;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+  
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    
+    color: #868686;
+    
+  }
+  
+  #startClass_text{
+    font-family: Noto Sans KR;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+    font-style: normal;
+    color: #000000;
+    margin: 20px;
+  }
+  
+  .button_container{
+    bottom: 100%;
+    padding: 14px 20px;
+    border: none;
+    float: right;
+  }
+  
+  #cancel_button{
+    background-color: #FEFEFE;
+    border: none;
+    cursor: pointer;
+    margin-right: 30px
+    ;  
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: #333333;
+  }
+  
+  #startClass_button{
+    background-color: #FEFEFE;
+    border: none;
+    cursor: pointer;
+    right: 0%;
+    
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: #686868;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+  }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link rel='stylesheet' href='/stylesheets/login.css' />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img src="/images/logo.png" onClick="location.href='/'"  alt="Avatar" class="avatars">
+        <a class="menu1" onClick="location.href='/joinClass'">클래스 참여하기</a>
+        <a class="menu2" onClick="location.href='/createClass'">클래스 만들기</a>
+        <a class="menu3" onClick="location.href='/myClass'">내 클래스</a>
+        <a class="login" onClick="location.href='/login'">로그인</a>
+        <a class="signUp" onClick="location.href='/signUp'">회원가입</a>
+      </div>
+    </header>
+  </body>
+
+  <div class="middle">
+    <div class="loginBoard">
+      <a class="nameText">로그인</a>
+      <form>
+        <br style="text-align: left; width: 60%;">
+
+          <div class="select">
+            <input type="radio" id="student" name="userType"><label for="student">학생</label>
+            <input type="radio" id="teacher" name="userType"><label for="teacher">선생님</label>
+       </div></br></br>
+       
+          <input class='text_input' type='text' name='id' placeholder="아이디" required /></br></br></br></br></br>
+          <input class='text_input' type='password' name='pwd' placeholder="비밀번호" required/></br></br>
+        
+        <div class='loginButton' type='submit'><a style="font-family: Noto Sans KR; font-style: normal;font-size: 20px; color: black;">로그인</a></div>
+      </form>
+      <a id='forgetPwd'>비밀번호가 기억나지 않나요?</a>
+    </div>
+    <img src="/images/Group 71.png" id="deco">
+  </div>
+
+  <footer>
+    <div class="inner-footer">
+      <div class="left-footer">
+        <a class="logo" href="/">
+          <img class="web" src="/images/LOGO.png">
+        </a>
+        <p class="teamname">Team - KH</p>
+        <p class="copyright">Copyright © HandsUp</p>
+       </div>
+       <div class="right-footer">
+          <a class="github" href="https://github.com/111111022/KH_project.git">
+            <img class="githubpic" src="/images/github.png">
+          </a>
+          <a class="agree1">이용약관</p>
+          <a class="agree2">개인정보처리방침</p>
+          <a class="agree3">문의하기</p>
+       </div>
+      </div>
+    </div>
+  </footer>
+
+</html>
