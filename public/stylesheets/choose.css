@@ -82,12 +82,11 @@ top: 10px;
     height: 30px;
     right: 10%;
     top: 55px;
-
     font-weight: bold;
     font-size: 16px;
-    line-height: 30px;
-
+    color: #000000;
 }
+
 .signUp
 {
     position: absolute;
@@ -105,54 +104,46 @@ top: 10px;
     text-decoration: underline;
 }
 
-.classname {
-  position: absolute;
-  width: 750px;
-  height: 65px;
-  left: 259px;
-  top: 166px;
+.who_login
+{
+    position: absolute;
+    height: 15px;
+    right: 14%;
+    top: 55px;
 
-  font-family: Noto Sans KR;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 45px;
-  line-height: 65px;
-  text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: right;
 
-  color: #975AB4;
+    color: #000000;
 }
 
 .classname
 {
   position: absolute;
-width: 690px;
-height: 65px;
-left: 259px;
-top: 166px;
-
+  height: 65px;
+  left: 14vw;
+  top: 166px;
+  
 font-family: Noto Sans KR;
 font-style: normal;
 font-weight: bold;
 font-size: 45px;
-line-height: 65px;
-text-align: left;
 
 color: #975AB4;
 }
 
 .default{
   position: absolute;
-width: 472px;
 height: 43px;
-left: 259px;
+left: 14vw;
 top: 249px;
 
 font-family: Noto Sans KR;
 font-style: normal;
 font-weight: bold;
 font-size: 30px;
-line-height: 43px;
-text-align: left;
 
 color: #000000;
 
@@ -161,26 +152,21 @@ color: #000000;
 .printchoose1
 {
   position: absolute;
-  width: 648px;
+  width: 35vw;
   height: 404px;
-  left: 259px;  
+  left: 10vw;  
   top: 426px;
-
   background: #EBEBEB;
-/* shadow2 */
 
   box-shadow: 8px 8px 15px rgba(177, 177, 177, 0.6);
   border-radius: 20px;
   font-family: Noto Sans KR;
-  font-style: normal;
   font-weight: bold;
   font-size: 30px;
-  text-align: center;
   color: #747474;
-
   cursor: pointer;
-
   border: none;
+  margin: auto;
 }
 
 .printchoose1:hover {
@@ -192,13 +178,12 @@ color: #000000;
 .printchoose2
 {
   position: absolute;
-  width: 648px;
+  width: 35vw;
   height: 404px;
-  left: 999px;
+  right: 10vw;
   top: 426px;
   
   background: #EBEBEB;
-  /* shadow2 */
   
   box-shadow: 8px 8px 15px rgba(177, 177, 177, 0.6);
   border-radius: 20px;
@@ -206,11 +191,9 @@ color: #000000;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
-  text-align: center;
+  margin: auto;
   color: #747474;
-
   cursor: pointer;
-
   border: none;
 }
 
@@ -223,13 +206,12 @@ color: #000000;
 .printchoose3
 {
   position: absolute;
-  width: 648px;
+  width: 35vw;
   height: 404px;
-  left: 259px;
+  left: 10vw;
   top: 927px;
   
   background: #EBEBEB;
-  /* shadow2 */
   
   box-shadow: 8px 8px 15px rgba(177, 177, 177, 0.6);
   border-radius: 20px;
@@ -240,9 +222,8 @@ color: #000000;
   font-size: 30px;
   text-align: center;
   color: #747474;
-
   cursor: pointer;
-
+  margin: auto;
 }
 
 .printchoose3:hover {
@@ -254,13 +235,12 @@ color: #000000;
 .printchoose4
 {
   position: absolute;
-  width: 648px;
+  width: 35vw;
   height: 404px;
-  left: 999px;
+  right: 10vw;
   top: 927px;
   
   background: #EBEBEB;
-  /* shadow2 */
   
   box-shadow: 8px 8px 15px rgba(177, 177, 177, 0.6);
   border-radius: 20px;
@@ -271,8 +251,9 @@ color: #000000;
   font-size: 30px;
   text-align: center;
   color: #747474;
-
   cursor: pointer;
+  margin: auto;
+
 }
 
 .printchoose4:hover {
@@ -312,73 +293,74 @@ color: #000000;
   left: 37%;
   top : 25%
 }
+
 /* footer css 시작*/
 footer{
   position: absolute;
-  width: 1920px;
+  width: 100%;
   height: 200px;
   left: 0px;
-  top: 1500px;
   background: #FAFAFA;
+  top: 100vw;
 }
 
 .logo{
   position: absolute;
   width: 202px;
   height: 52px;
-left: 259px;
-top: 20px;
+  left: 14%;    
+  top: 10%;
 }
 
 .githubpic{
   position: absolute;
-  left: 1604px;
+  right: 8%;
   top: 138px;
 }
 
 .teamname{
   position: absolute;
-width: 100px;
-height: 24px;
-left: 260px;
-top: 116px;
-
-font-family: "Noto Sans KR";
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 150%;
-
-display: flex;
-align-items: center;
-
-color: #000000;
+  width: 100px;
+  height: 24px;
+  left: 14%;
+  top: 116px;
+  
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  
+  display: flex;
+  align-items: center;
+  
+  color: #000000;
 }
 
 .copyright{
   position: absolute;
-width: 141px;
-height: 21px;
-left: 260px;
-top: 145px;
+  width: 141px;
+  height: 21px;
+  left: 14%;
+  top: 145px;
 
-font-family: "Noto Sans";
-font-style: normal;
-font-weight: 300;
-font-size: 14px;
-line-height: 150%;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
 
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 
-color: #9E9E9E;
+  color: #9E9E9E;
 }
 
 .agree1{
   position: absolute;
 width: 60px;
 height: 21px;
-left: 1285px;
+right: 24%;
 top: 145px;
 
 font-family: "Noto Sans";
@@ -397,7 +379,7 @@ color: #9E9E9E;
   position: absolute;
 width: 120px;
 height: 21px;
-left: 1370px;
+right: 16%;
 top: 145px;
 
 font-family: Noto Sans;
@@ -417,7 +399,7 @@ color: #9E9E9E;
   position: absolute;
 width: 60px;
 height: 21px;
-left: 1507px;
+right: 12%;
 top: 145px;
 
 font-family: Noto Sans;
@@ -431,32 +413,4 @@ align-items: center;
 
 color: #9E9E9E;
 }
-
-#classIn_button
-  {
-    position: absolute;
-    width: fit-content;
-    right: 14%;
-    top: 235px;
-    padding: 30px;
-
-    background: #EBEBEB;
-    box-shadow: 8px 8px 15px rgba(177, 177, 177, 0.6);
-    border-radius: 20px;
-    border: none;
-    
-    font-family: Noto Sans KR;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-    color: #747474;
-
-    cursor: pointer;
-}
-
-#classIn_button:hover {
-    background: #F8E8FF;
-    box-shadow: 8px 8px 15px rgba(106, 71, 120, 0.6);
-    color: #000000;
-  }
+/* footer css 끝 */
