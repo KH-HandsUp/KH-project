@@ -6,28 +6,24 @@ class User extends Sequelize.Model {
             name: {
                 type: Sequelize.STRING(20),
                 allowNull: false,
+            },
+            user_id: {
+                type: Sequelize.STRING(20),
+                allowNull: false,
                 unique: true,
             },
             password:{
                 type: Sequelize.STRING(100),
                 allowNull:false,
-                unique:true,
-            },
-            grade:{
-                type:Sequelize.INTEGER(),
+            },  
+            question:{
+                type:Sequelize.STRING(100),
                 allowNull:false,
-                unique:true,
             },
-            class:{
-                type:Sequelize.INTEGER(),
+            answer:{
+                type:Sequelize.STRING(100),
                 allowNull:false,
-                unique:true,
-            },
-            number:{
-                type:Sequelize.INTEGER(),
-                allowNull:false,
-                unique:true,
-            },
+            }
         },{
             sequelize,
             timestamps: false,
@@ -39,6 +35,10 @@ class User extends Sequelize.Model {
             collate: "utf8_general_ci",
         })
     }
+
+    static associate(db) {
+        db.User.belongsToMany(db.Class, {through: 'classUser'});
+  }
 }
 
 module.exports = User;
