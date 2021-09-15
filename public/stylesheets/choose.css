@@ -178,6 +178,22 @@ color: #000000;
 
   box-shadow: 8px 8px 15px rgba(177, 177, 177, 0.6);
   border-radius: 20px;
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color: #747474;
+
+  cursor: pointer;
+
+  border: none;
+}
+
+.printchoose1:hover {
+  background: #F8E8FF;
+  box-shadow: 8px 8px 15px rgba(106, 71, 120, 0.6);
+  color: #000000;
 }
 
 .printchoose2
@@ -193,6 +209,22 @@ color: #000000;
   
   box-shadow: 8px 8px 15px rgba(177, 177, 177, 0.6);
   border-radius: 20px;
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color: #747474;
+
+  cursor: pointer;
+
+  border: none;
+}
+
+.printchoose2:hover {
+  background: #F8E8FF;
+  box-shadow: 8px 8px 15px rgba(106, 71, 120, 0.6);
+  color: #000000;
 }
 
 .printchoose3
@@ -208,6 +240,22 @@ color: #000000;
   
   box-shadow: 8px 8px 15px rgba(177, 177, 177, 0.6);
   border-radius: 20px;
+  border: none;
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color: #747474;
+
+  cursor: pointer;
+
+}
+
+.printchoose3:hover {
+  background: #F8E8FF;
+  box-shadow: 8px 8px 15px rgba(106, 71, 120, 0.6);
+  color: #000000;
 }
 
 .printchoose4
@@ -223,6 +271,21 @@ color: #000000;
   
   box-shadow: 8px 8px 15px rgba(177, 177, 177, 0.6);
   border-radius: 20px;
+  border: none;
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color: #747474;
+
+  cursor: pointer;
+}
+
+.printchoose4:hover {
+  background: #F8E8FF;
+  box-shadow: 8px 8px 15px rgba(106, 71, 120, 0.6);
+  color: #000000;
 }
 
 .hadnspic{
@@ -375,3 +438,32 @@ align-items: center;
 
 color: #9E9E9E;
 }
+
+#classIn_button
+  {
+    position: absolute;
+    width: fit-content;
+    right: 14%;
+    top: 235px;
+    padding: 30px;
+
+    background: #EBEBEB;
+    box-shadow: 8px 8px 15px rgba(177, 177, 177, 0.6);
+    border-radius: 20px;
+    border: none;
+    
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: #747474;
+
+    cursor: pointer;
+}
+
+#classIn_button:hover {
+    background: #F8E8FF;
+    box-shadow: 8px 8px 15px rgba(106, 71, 120, 0.6);
+    color: #000000;
+  }
