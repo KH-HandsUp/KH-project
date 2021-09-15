@@ -283,11 +283,12 @@ color: #9E9E9E;
   border: 0px solid;
 
   
-    cursor: pointer;
-    text-align: center; 
+  cursor: pointer;
+  text-align: center; 
     
-    padding: 10px;
+  padding: 10px;
 }
+
 #deco{
   position: absolute;
   right: 22%;
