@@ -2,7 +2,7 @@
 <html>
   <head>
     
-    <link rel='stylesheet' href='/stylesheets/login.css' />
+    <link rel='stylesheet' href='/stylesheets/signUp.css' />
   </head>
   <body>
     <header>
@@ -17,28 +17,44 @@
     </header>
   </body>
 
-  <div class="middle2">
-    <div class="signUpBoard">
-      <a class="nameText">회원가입</a>
-      <form>
-        <br style="text-align: left; width: 60%;">
+  <div class="title">회원가입</div>
 
+    <div class="signUpBoard">
+      <form class="signUpForm">
           <div class="select">
             <input type="radio" id="student" name="userType"><label for="student">학생</label>
             <input type="radio" id="teacher" name="userType"><label for="teacher">선생님</label>
-       </div></br></br>
+          </div>
+          <div class="inputWrapper">
+            <div class="input_box">
+            <div class="input_text">이름</div>
+            <input class='text_input' type='name' name='name' placeholder="이름을 입력하세요" />
+            </div>
+            <div class="input_box">
+            <div class="input_text">아이디</div>
+            <input class='text_input' type='text' name='id' placeholder="영문, 숫자를 포함하여 8글자 이상 입력하세요"  />
+            </div>
 
-          <input class='text_input' type='name' name='name' placeholder="이름을 입력하세요" required /></br></br>
-          <input class='text_input' type='text' name='id' placeholder="영문, 숫자를 포함하여 8글자 이상 입력하세요" required /></br></br>
-          <input class='text_input' type='password' name='pwd' placeholder="영문, 숫자, 특수기호를 포함하여 8글자 이상 입력하세요" required/></br></br>
-          <input class='text_input' type='ckPassword' name='ckPassword' placeholder="비밀번호를 확인하세요" required/></br></br>
-          <input class='text_input' type='qCkPassword' name='qCkPassword' placeholder="비밀번호 찾기에서 답변할 질문을 선택하세요" required/></br></br>
-          <input class='text_input' type='aCkPassword' name='aCkPassword' placeholder="비밀번호 찾기 질문의 답을 입력하세요" required/></br></br>
-        
+            <div class="input_box">
+            <div class="input_text">비밀번호</div>
+            <input class='text_input' type='password' name='pwd' placeholder="영문, 숫자, 특수기호를 포함하여 8글자 이상 입력하세요" />
+            </div>
+            <div class="input_box">
+            <div class="input_text">비밀번호 확인</div>
+            <input class='text_input' type='ckPassword' name='ckPassword' placeholder="비밀번호를 확인하세요" />
+            </div>
+            <div class="input_box">
+            <div class="input_text">비밀번호 확인 질문</div>
+            <input class='text_input' type='qCkPassword' name='qCkPassword' placeholder="비밀번호 찾기에서 답변할 질문을 선택하세요" />
+            </div>
+            <div class="input_box">
+              <div class="input_text">비밀번호 확인 답변</div>
+            <input class='text_input' type='aCkPassword' name='aCkPassword' placeholder="비밀번호 찾기 질문의 답을 입력하세요" />
+            </div>
+          </div>
         <div class='signUpButton' type='submit'><a style="font-family: Noto Sans KR; font-style: normal;font-size: 20px; color: black;">회원가입</a></div>
       </form>
     </div>
-  </div>
 
   <footer>
     <div class="inner-footer">
