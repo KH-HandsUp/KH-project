@@ -347,8 +347,9 @@ img {
   max-width: 97%;
   position: absolute;
   width: 100%;
-  margin-left: 35px ;
-  margin-top: 120px;
+  height: 100%;
+  margin-left: 2% ;
+  margin-top: 8%;
   /*filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25));*/
   cursor: pointer;
 
@@ -378,8 +379,7 @@ img {
 
 .dots
 {
-  
-  margin: 580px 20px 320px -550px;
+  margin: 43% 5% 100% -40%;
 }
 .dot {
   height: 15px;
@@ -420,8 +420,8 @@ img {
 
 .opinion{
   position: absolute;
-  width: 605px;
-  height: 119px;
+  width: 40%;
+  height: 55%;
   left: 770px;
   top: 310px;
 
@@ -439,7 +439,7 @@ img {
   position: absolute;
   width: 485px;
   height: 119px;
-  left: 890px;
+  left: 58%;
   top: 360px;
 
   font-family: Noto Sans KR;
@@ -471,7 +471,7 @@ img {
   position: absolute;
   width: 80px;
   height: 43px;
-  left: 213px;
+  left: 14%;
   top: 1056px;
 
   font-family: Noto Sans KR;
@@ -491,7 +491,7 @@ img {
   position: absolute;
   width: 140px;
   height: 140px;
-  left: 173px;
+  left: 12%;
   top: 856px;
 
   background: url(image.png);
@@ -501,7 +501,7 @@ img {
   position: absolute;
   width: 127px;
   height: 51px;
-  left: 175px;
+  left: 11.4%;
   top: 1051px;
   filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25));
 }
@@ -510,7 +510,7 @@ img {
   position: absolute;
   width: 80px;
   height: 43px;
-  left: 536px;
+  left: 35.4%;
   top: 1056px;
 
   font-family: Noto Sans KR;
@@ -530,7 +530,7 @@ img {
   position: absolute;
   width: 372px;
   height: 46px;
-  left: -15px;
+  left: -1%;
   top: 1150px;
 
   font-family: Noto Sans KR;
@@ -547,7 +547,7 @@ img {
   position: absolute;
   width: 140px;
   height: 140px;
-  left: 500px;
+  left: 32.8%;
   top: 856px;
 
   background: url(image.png);
@@ -557,7 +557,7 @@ img {
   position: absolute;
   width: 127px;
   height: 51px;
-  left: 510px;
+  left: 33.5%;
   top: 1051px;
   filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25));
 }
@@ -566,7 +566,7 @@ img {
   position: absolute;
   width: 372px;
   height: 46px;
-  left: 340px;
+  left: 22.3%;
   top: 1150px;
 
   font-family: Noto Sans KR;
@@ -583,7 +583,7 @@ img {
   position: absolute;
   width: 60px;
   height: 43px;
-  left: 879px;
+  left: 58%;
   top: 1056px;
 
   font-family: Noto Sans KR;
@@ -603,7 +603,7 @@ img {
   position: absolute;
   width: 140px;
   height: 140px;
-  left: 831px;
+  left: 55%;
   top: 856px;
 
   background: url(image.png);
@@ -613,7 +613,7 @@ img {
   position: absolute;
   width: 127px;
   height: 51px;
-  left: 841px;
+  left: 55.4%;
   top: 1051px;
   filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25));
 }
@@ -621,7 +621,7 @@ img {
   position: absolute;
   width: 372px;
   height: 46px;
-  left: 660px;
+  left: 43.5%;
   top: 1150px;
 
   font-family: Noto Sans KR;
@@ -638,7 +638,7 @@ img {
   position: absolute;
   width: 80px;
   height: 43px;
-  left: 1235px;
+  left: 81.3%;
   top: 1056px;
 
   font-family: Noto Sans KR;
@@ -658,7 +658,7 @@ img {
   position: absolute;
   width: 140px;
   height: 140px;
-  left: 1186px;
+  left: 78%;
   top: 856px;
 
   background: url(image.png);
@@ -668,7 +668,7 @@ img {
   position: absolute;
   width: 127px;
   height: 51px;
-  left: 1195px;
+  left: 78.7%;
   top: 1051px;
   filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25));
 }
@@ -677,7 +677,7 @@ img {
   position: absolute;
   width: 372px;
   height: 46px;
-  left: 1030px;
+  left: 68.2%;
   top: 1150px;
 
   font-family: Noto Sans KR;
