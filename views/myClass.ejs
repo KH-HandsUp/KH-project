@@ -86,7 +86,7 @@
           <div class="container">
             <div id='text1'>담당 선생님께 클래스 코드를 받아 입력하세요!</div>
             <input type="text" placeholder="클래스 코드(필수)" name="classCode" required></br>
-            <div id='text2'>- 클래스 코드는 영어와 숫자가 혼합된 6글자 코드입니다.</div></br></br>
+            <div id='text2'>- 클래스 코드는 영어와 숫자가 혼합된 코드입니다.</div></br></br>
             <div class="button_container">
               <button type="button" onclick="document.getElementById('joinClass_code').style.display='none'" id="cancel_button">취소</button>
               <button type="submit" id='joinClass_code_button'>참여하기</button>
@@ -107,7 +107,7 @@
             <input type="number" placeholder="예정 인원" name="limitMember" >
             <div class="button_container">
               <button type="button" onclick="document.getElementById('makeClass').style.display='none'" id="cancel_button">취소</button>
-              <button type="submit" id='classMake_button'>만들기</button>
+              <button type="submit" id='classMake_button' onclick="location.href='/myclass'">만들기</button>
             </div>
           </div>
         </form>
