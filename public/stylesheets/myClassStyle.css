@@ -8,6 +8,7 @@ a {
 }
 
 
+
 .menu1,.menu2,.menu3,.login,.signUp
 {
     cursor: pointer;
@@ -16,22 +17,20 @@ a {
 
 .avatars
 {
+  width: 120px;
   position: absolute;
-width: 120px;
-height: 108px;
-left: 14%;
-top: 10px;
+  height: 108px;
+  left: 14%;
+  top: 10px;
 }
 .menu1
 {
     position: absolute;
     height: 30px;
-    /* left: 458px; */
     left: 36%; 
     top: 55px;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 18px;
 
     color: #000000;
     
@@ -41,13 +40,11 @@ top: 10px;
 {
     position: absolute;
     height: 30px;
-    /* left: 700px; */
     left: 46%;  /* 앞에 메뉴랑 간격 10% */
     top: 55px;
 
     font-weight: bold;
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 18px;
 
     color: #000000;
 
@@ -60,17 +57,34 @@ top: 10px;
     top: 55px;
 
     font-weight: bold;
-    font-size: 16px;
-    line-height: 30px;
-    border-bottom: 3px solid #BE94D1;
+    font-size: 18px;
+    
 
-    color: #BE94D1;
+    color: #000000;
 }
-
-
-.who_login
+b {
+  color: #BE94D1;
+  font-size: 20px;
+}
+.login
 {
     position: absolute;
+    width:250px;
+    height: 30px;
+    right: 10%;
+    top: 55px;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+
+    color: #BE94D1;
+    text-decoration: underline;
+}
+.signUp
+{
+  position: absolute;
+    width:65px;
     height: 15px;
     right: 14%;
     top: 55px;
@@ -78,19 +92,101 @@ top: 10px;
     font-weight: bold;
     font-size: 16px;
     line-height: 30px;
-    text-align: right;
 
     color: #000000;
+}
+
+.name{
+  position: absolute;
+  height: 15px;
+  right: 22%;
+  top: 54px;
+  font-size: 18px;
+}
+
+#logout {
+  position: absolute;
+  right: 15%;
+  top: 51px;
+  font-size: 18px;
+  background: #BE94D1;
+  border: 0;
+  color: #FFFFFF;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#logout:hover {
+  cursor: pointer;
+}
+
+.search_box{
+  position: absolute;
+  width: 72%;
+  height: 100px;
+  left: 14%;
+  top: 348px;
+  
+  background: #F6F8C2;
+  border-radius: 20px;
+}
+
+.foot_hu{
+  background-color: #FAFAFA;
+  position: absolute;
+  width:1920px;
+  height: 170px;
+  bottom: 30px;
+  right: -130px;
+}
+
+.tn{
+  color: #884BA5;
+  font-size: 36px;
+  line-height: 30px;
+}
+
+.tou{
+  color: #9E9E9E;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.pp{
+  color: #9E9E9E;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.ask{
+  color: #9E9E9E;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.info_policy{
+  color: #000000;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.txt_copyright{
+  color: #9E9E9E;
+  font-size: 14px;
+  line-height: 30px;
 }
 
 /* footer css 시작*/
 footer{
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 200px;
   left: 0px;
   background: #FAFAFA;
-  top: 350%;
+  top: 280%;
+  
 }
 
 .logo{
@@ -237,6 +333,12 @@ color: #9E9E9E;
     
   }
 
+  c{
+    color: #BE94D1;
+    font-size: 28px;
+  }
+  
+
   .search_box{
     position: absolute;
     width: 72%;
@@ -312,14 +414,13 @@ color: #9E9E9E;
     width: 100%;
     text-align: center;
     font-style: normal;
-    font-size: 30px;
+    font-size: 23px;
     line-height: 43px;
     font-weight: 500;
   }
 
   .lists thead th{
-    padding: 30px;
-
+    padding: 10px;
     background: #FEFFF1; 
     font-style: normal; 
     font-weight: bold; 
@@ -328,8 +429,7 @@ color: #9E9E9E;
 
   .lists tbody td{
     border-top: 3px solid #797979;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 10px 0;
   }
 
 
