@@ -24,6 +24,10 @@ class Class extends Sequelize.Model {
           type: Sequelize.STRING(20),
           allowNull: false,
         },
+        teacherName: {
+          type: Sequelize.STRING(5),
+          allowNull: false,
+        }
       },
       {
         sequelize,

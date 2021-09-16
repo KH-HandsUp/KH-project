@@ -16,7 +16,7 @@ const FindMyClass = async (userId) => {
           id: ele.ClassId,
         },
       });
-      list[i] = {class_name: element[0].name, teacher_name: element[0].room, how_many_stu: element[0].limitMember};
+      list[i] = {class_name: element[0].name, teacher_name: element[0].room, how_many_stu: element[0].limitMember, class_id: element[0].id};
     }
   
     return list;
