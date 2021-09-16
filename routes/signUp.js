@@ -5,6 +5,7 @@ var router = express.Router();
 router.get("/", function (req, res, next) {
   res.render("signUp", {
     isLogin: req.session.isLogin,
+    name: req.session.name
   });
 });
 
