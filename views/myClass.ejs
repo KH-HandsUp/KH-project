@@ -15,19 +15,30 @@
         }
     }
     </script>
+    <script>
+      function start(e){
+        var children = e.childNodes;
+        var childData = [];
+        for(var i=0; i<children.length; i++){
+            childData.push(children[i].innerText);
+        }
+        document.write('<form action="/classin" id="smb_form" method="post"><input type="hidden" id="childData" name="childData" value="'+ childData +'"></form>');
+        document.getElementById("smb_form").submit();
+      }
+    </script>
   <body>
     <div class="header">
         <img src="/images/logo.png" onClick="location.href='/'"  alt="Avatar" class="avatars">
         <a class="menu1" onClick="document.getElementById('joinClass_code').style.display='block'" style="width:auto;" >클래스 참여하기</a>
         <a class="menu2" onClick="document.getElementById('makeClass').style.display='block'" style="width:auto;" >클래스 만들기</a>
         <a class="menu3" onClick="location.href='/myClass'">내 클래스</a>
-        <a class="who_login">'000' 님, 어서오세요</a>
+        <a class="who_login"><%=val.user_name%> 님, 어서오세요</a>
       </div>
     <div class="title">내 클래스</div>
     <div class="who_join">000 님이 참여중인 클래스 입니다.</div>
 
     <div class="search_box">
-        <a id="search_text">총 클래스 0 강</a>
+        <a id="search_text">총 클래스 <%=val.totla_class%> 강</a>
         <input name="search_word" type="search" placeholder="검색어를 입력하세요" id="search_input_box">
         <button id="search_button">검색</button>
     </div>
@@ -53,16 +64,13 @@
               <td class="teacher_name">000 선생님</td>
               <td class="how_manu_stu">00 명</td>
             </tr>
-            <tr id= 'item'  style="cursor: pointer;" onclick="start(this)">
-              <td class="class_name">눈누난나 야호 00시간</td>
-              <td class="teacher_name">000 선생님</td>
-              <td class="how_manu_stu">00 명</td>
-            </tr>
-            <tr id= 'item'  style="cursor: pointer;" onclick="start(this)">
-              <td class="class_name">눈누난나 야호 00시간</td>
-              <td class="teacher_name">000 선생님</td>
-              <td class="how_manu_stu">00 명</td>
-            </tr>
+            <% list.forEach(function(val){ %>
+              <tr id= 'item'  style="cursor: pointer;" onclick="start(this)">
+                <td class="class_name"><%=val.class_name%></td>
+                <td class="teacher_name"><%=val.teacher_name%></td>
+                <td class="how_manu_stu"><%=val.how_many_stu%></td>
+              </tr>
+            <% }) %>
           </tbody>
         </table>
     </div>
