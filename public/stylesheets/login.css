@@ -341,6 +341,7 @@ color: #9E9E9E;
   text-decoration-line: underline;
   margin-top: 50px;
   margin-left: 10px;
+  cursor: pointer;
 
   color: #9E9E9E;
 }
