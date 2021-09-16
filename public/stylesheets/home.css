@@ -118,7 +118,7 @@
   {
       position: absolute;
       height: 30px;
-      left: 56%; /* 앞에 메뉴랑 간격 10% */
+      left: 46%; /* 앞에 메뉴랑 간격 10% */
       top: 55px;
 
       font-weight: bold;

@@ -8,10 +8,9 @@ class Lesson extends Sequelize.Model {
                 allowNull: false,
                 unique: true,
             },
-            createAt: Sequelize.DATE()
         },{
             sequelize,
-            timestamps: false,
+            timestamps: true,
             underscored: false,
             modelName: "Lesson",
             tableName: "lesson",

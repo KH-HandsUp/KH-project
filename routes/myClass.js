@@ -1,8 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var User = require('../models/User');
-var FindMyClass = require("../util/utils");
-
+var FindMyClass = require('../util/FindMyClass');
 /* GET home page. */
 router.get('/',async (req, res, next) => {
   const user = await User.findAll({

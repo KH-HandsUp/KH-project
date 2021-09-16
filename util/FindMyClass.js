@@ -1,3 +1,4 @@
+const { Lesson } = require("../models");
 const Class = require("../models/Class");
 const ClassUser = require("../models/ClassUser");
 
@@ -21,5 +22,7 @@ const FindMyClass = async (userId) => {
   
     return list;
   };
+
+
 
   module.exports = FindMyClass;

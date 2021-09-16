@@ -7,12 +7,12 @@ class Class extends Sequelize.Model {
         name: {
           type: Sequelize.STRING(20),
           allowNull: false,
-          unique: true,
+
         },
         room: {
           type: Sequelize.STRING(100),
           allowNull: false,
-          unique: true,
+
         },
         member: {
           type: Sequelize.INTEGER(),
