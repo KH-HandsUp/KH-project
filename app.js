@@ -8,6 +8,8 @@ var session = require("express-session");
 var MySQLStore = require("express-mysql-session")(session);
 require("dotenv").config();
 
+
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var myClassRouter = require('./routes/myClass');
@@ -19,6 +21,8 @@ var classinRouter = require('./routes/classin');
 var chooseRouter = require('./routes/choose');
 var pwdRouter = require('./routes/password');
 var answerRouter = require('./routes/answer');
+var apiRouter = require("./routes/api");
+
 const { sequelize } = require("./models");
 
 
@@ -64,6 +68,7 @@ app.use(
   })
 );
 
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/myclass', myClassRouter);
@@ -73,7 +78,11 @@ app.use('/answer', answerRouter);
 app.use('/chat', chatRouter);
 app.use('/classin', classinRouter);
 app.use('/choose', chooseRouter);
+
 app.use('/pwd', pwdRouter);
+
+app.use("/api", apiRouter);
+
 
 
 

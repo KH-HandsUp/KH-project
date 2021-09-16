@@ -37,10 +37,12 @@
         <button type="button" id="logout">로그아웃</button>
       </div>
     <div class="title">내 클래스</div>
+
     <div class="who_join"><c><%= val.user_name%></c> 님이 참여중인 클래스 입니다.</div>
 
     <div class="search_box">
         <a id="search_text">총 클래스 <%=val.total_class%> 강</a>
+
         <input name="search_word" type="search" placeholder="검색어를 입력하세요" id="search_input_box">
         <button id="search_button">검색</button>
     </div>
@@ -61,6 +63,7 @@
             </tr>
           </thead>
           <tbody>
+
             <% list.forEach(function(ele){ %>
               <tr id= 'item'  style="cursor: pointer;" onclick="location.href='/classIn/<%= ele.class_id %>'">
                 <td class="class_name"><%= ele.class_name%></td>
@@ -68,6 +71,7 @@
                 <td class="how_manu_stu"><%= ele.how_many_stu%></td>
               </tr>
             <% }) %>
+
           </tbody>
         </table>
     </div>

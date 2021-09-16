@@ -43,9 +43,7 @@ class User extends Sequelize.Model {
     );
   }
 
-  static associate(db) {
-    db.User.belongsToMany(db.Class, { through: "classUser" });
-  }
+  static associate(db) {}
 }
 
 module.exports = User;
