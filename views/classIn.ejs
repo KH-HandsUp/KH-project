@@ -19,7 +19,7 @@
         <a id="classCode">수업코드 : <%= val.user_code%></a>
 
         <!-- isStudent: 학생인지 선생님인지 구분하는 변수 classin.js에 임시로 추가해둠, 수정 필요!!!!!!!!!!!!!! -->
-        <% if(isStudent) {%>
+        <% if(!isStudent=='1') {%>
           <button id="classIn_button" type="button" onclick="location.href='/choose'">실시간 수업 참여하기</button>
         <% }else{ %>
           <button id="classIn_button" type="button" onClick="document.getElementById('startClass').style.display='block'" style="width:auto;">실시간 수업 시작하기</button>
