@@ -24,7 +24,8 @@
   <div class="middle">
     <div class="loginBoard">
       <a class="nameText">로그인</a>
-      <form action="/users/login" method="POST">
+
+      <form class="login_form" method="POST" action="/users/login">
         <br style="text-align: left; width: 60%;">
 
           <div class="select">
@@ -35,6 +36,7 @@
           <input class='text_input' type='text' name='user_id' placeholder="아이디" required /></br></br></br></br></br>
           <input class='text_input' type='password' name='password' placeholder="비밀번호" required/></br></br>
         
+
         <button class='loginButton' type='submit'><a style="font-family: Noto Sans KR; font-style: normal;font-size: 20px; color: black;">로그인</a></button>
       </form>
       <a id='forgetPwd'>비밀번호가 기억나지 않나요?</a>
@@ -52,7 +54,7 @@
         <p class="copyright">Copyright © HandsUp</p>
        </div>
        <div class="right-footer">
-          <a class="github" href="https://github.com/111111022/KH_project.git">
+          <a class="github" href="https://github.com/KH-HandsUp/KH-project.git">
             <img class="githubpic" src="/images/github.png">
           </a>
           <a class="agree1">이용약관</p>

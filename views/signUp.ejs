@@ -5,6 +5,8 @@
     
     <link rel='stylesheet' href='/stylesheets/signUp.css' />
   </head>
+  
+
   <body>
     <header>
       <div class="header">
@@ -18,6 +20,7 @@
         <% } else { %>
           <div><%= name %> 님 안녕하세요!</div>
           <% } %>
+
       </div>
     </header>
   </body>
@@ -25,7 +28,8 @@
   <div class="title">회원가입</div>
 
     <div class="signUpBoard">
-      <form class="signUpForm" action="/users/signUp" method="POST">
+
+      <form class="signUpForm" method="POST" action="/users/signup">
           <div class="select">
             <input type="radio" id="student" name="student"><label for="student">학생</label>
             <input type="radio" id="teacher" name="teacher"><label for="teacher">선생님</label>
@@ -39,7 +43,6 @@
             <div class="input_text">아이디</div>
             <input class='text_input' type='text' name='id' placeholder="영문, 숫자를 포함하여 8글자 이상 입력하세요"  />
             </div>
-
             <div class="input_box">
             <div class="input_text">비밀번호</div>
             <input class='text_input' type='password' name='password' placeholder="영문, 숫자, 특수기호를 포함하여 8글자 이상 입력하세요" />
@@ -49,8 +52,30 @@
             <input class='text_input' type='ckPassword' name='ckPassword' placeholder="비밀번호를 확인하세요" />
             </div>
             <div class="input_box">
+
             <div class="input_text">비밀번호 확인 질문</div>
-            <input class='text_input' type='question' name='question' placeholder="비밀번호 찾기에서 답변할 질문을 선택하세요" />
+
+           
+		        <select id="question" name="question" size="1">
+			      <option value="">선택하세요.</option>
+		      	<option value="1">기억에 남는 추억의 장소는?</option>
+		      	<option value="2">자신의 인생 좌우명은?</option>
+		      	<option value="3">자신의 보물 제1호는?</option>
+		      	<option value="4">가장 기억에 남는 선생님 성함은? </option>
+		      	<option value="5">타인이 모르는 자신만의 신체비밀이 있다면?</option>
+		      	<option value="6">추억하고 싶은 날짜가 있다면?</option>
+		      	<option value="7">받았던 선물 중 기억에 남는 독특한 선물은?</option>
+            <option value="8">유년시절 가장 생각나는 친구 이름은?</option>
+            <option value="9">받았던 선물 중 기억에 남는 독특한 선물은?</option>
+            <option value="10">인상깊게 읽은 책 이름은?</option>
+            <option value="11">읽은 책 중에서 좋아하는 구절이 있다면?</option>
+            <option value="12">자신이 두번째로 존경하는 인물은?</option>
+            <option value="13">친구들에게 공개하지 않은 어릴 적 별명이 있다면? </option>
+            <option value="14">초등학교 때 기억에 남는 짝궁 이름은?</option>
+            <option value="15">다시 태어나면 되고 싶은 것은?</option>
+            <option value="16">내가 좋아하는 캐릭터?</option>
+		      </select> <br> <br>
+          
             </div>
             <div class="input_box">
               <div class="input_text">비밀번호 확인 답변</div>
@@ -71,7 +96,7 @@
         <p class="copyright">Copyright © HandsUp</p>
        </div>
        <div class="right-footer">
-          <a class="github" href="https://github.com/111111022/KH_project.git">
+          <a class="github" href="https://github.com/KH-HandsUp/KH-project.git">
             <img class="githubpic" src="/images/github.png">
           </a>
           <a class="agree1">이용약관</p>

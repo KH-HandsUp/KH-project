@@ -10,12 +10,13 @@
         <a class="menu1" style="width:auto;" >클래스 참여하기</a>
         <a class="menu2"style="width:auto;" >클래스 만들기</a>
         <a class="menu3" onClick="location.href='/myClass'">내 클래스</a>
-        <a class="who_login"><%= name =>님, 어서오세요</a>
+        <span class="name"><b><%= name %></b> 님</span>
+        <button type="button" id="logout">로그아웃</button>
     </div>
-
-        <a class="teacher_name_text">김은애 선생님이 진행하는 수업입니다</a>
-        <a class="class_name_text">2학년 3반 친구들과 함께하는 소프트웨어 공학!</a>
-        <a id="classCode">수업코드: sum317</a>
+        <h2 class="class_name"><%=val.class_name %> </h2>
+        <a class="teacher_name_text"><%=val.teacher_name %> 선생님이 진행하는 수업입니다.</a>
+        <a class="class_name_text"><%= val.className %></a>
+        <a id="classCode">수업코드 : <%= val.user_code%></a>
 
         <!-- if문 써서 선생님인지 학생인지 확인 -->
         <button id="classIn_button" type="button" onclick="location.href='/choose'">실시간 수업 참여하기</button>
@@ -36,18 +37,25 @@
             </tr>
           </thead>
           <tbody>
-            <tr id= 'item'  style="cursor: pointer;">
-              <td class="class_name">애자일 프로세스 발표 수업</td>
-              <td class="teacher_name">2021.09.15.</td>
-            </tr>
-            <tr id= 'item'  style="cursor: pointer;">
-                <td class="class_name">단계적 프로세스 발표 수업</td>
-                <td class="teacher_name">2021.09.13.</td>
+            
+            <% list.forEach(function(val){ %>
+              <tr id= 'item'  style="cursor: pointer;">
+                <td class="class_name"><%=val.className%></td>
+                <td class="date"><%=val.classDate%></td>
               </tr>
               <tr id= 'item'  style="cursor: pointer;">
-                <td class="class_name">집 가고 싶다</td>
-                <td class="teacher_name">2021.09.11.</td>
+                <td class="class_name"><%=val.className%></td>
+                <td class="date"><%=val.classDate%></td>
               </tr>
+              <tr id= 'item'  style="cursor: pointer;">
+                <td class="class_name"><%=val.className%></td>
+                <td class="date"><%=val.classDate%></td>
+              </tr>
+              <tr id= 'item'  style="cursor: pointer;">
+                <td class="class_name"><%=val.className%></td>
+                <td class="date"><%=val.classDate%></td>
+              </tr>
+            <% }) %>
            
           </tbody>
         </table>
