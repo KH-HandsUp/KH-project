@@ -8,14 +8,14 @@
     <header>
       <div class="header">
         <img src="/images/logo.png" onClick="location.href='/'"  alt="Avatar" class="avatars">
-        <!-- <a class="menu1" onClick="location.href='/joinClass'">클래스 참여하기</a>
-        <a class="menu2" onClick="location.href='/createClass'">클래스 만들기</a>
+        <a class="menu1" onClick="location.href='/classIn'">클래스 참여하기</a>
+        <a class="menu2" onClick="document.getElementById('makeClass').style.display='block'" style="width:auto;" >클래스 만들기</a>
         <a class="menu3" onClick="location.href='/myClass'">내 클래스</a>
         <% if(!isLogin) { %>
           <a class="login" onClick="location.href='/login'">로그인</a>
           <a class="signUp" onClick="location.href='/signUp'">회원가입</a>
         <% } else { %>
-          <div><%= name %> 님 안녕하세요!</div>
+          <span class="name"><b><%= name %></b> 님, 안녕하세요!</span>
           <% } %>
       </div>
 
@@ -23,17 +23,17 @@
 
       <div class="mySlides">
         <div class="numbertext">1 / 3</div>
-        <img src="/images/2.png" style="width:50%; height: 450px; border-radius: 30px;">
+        <img src="/images/2.png" style="border-radius: 30px;">
       </div>
       
       <div class="mySlides">
         <div class="numbertext">2 / 3</div>
-        <img src="/images/1.png" style="width:50%; height: 450px; border-radius: 30px;">
+        <img src="/images/1.png" style="border-radius: 30px;">
       </div>
       
       <div class="mySlides">
         <div class="numbertext">3 / 3</div>
-        <img src="/images/3.png" style="width:50%; height: 450px; border-radius: 30px;">
+        <img src="/images/3.png" style="border-radius: 30px;">
       </div>
       
       </div>
@@ -80,14 +80,30 @@
       <a class='space'>우리 반 학생들만의 공간,</a>
       <a class='class1'><span class='line2'>클래스</span></a>
 
-      <img src="/images/4.png" style="width:50%; height: 450px; border-radius: 30px;" class="classImg">
+      <img src="/images/4.png" style="border-radius: 30px;" class="classImg">
 
       <a class='space1' ><span style='font-weight: 500;'>클래스를 통해</span></a>
       <a class='class2'><span class='line3' style='font-weight: bolder;'>지난 수업의 결과</span ><span style='font-weight: 500;'>를 한눈에</span></a>
 
-      <img src="/images/5.png" style="width:50%; height: 450px; border-radius: 30px;" class="classImg1">
+      <img src="/images/5.png" style="border-radius: 30px;" class="classImg1">
 
-
+      <div id="makeClass" class="blur">
+        <div class="modal" id="modal">
+          <div id="makeClass_text">클래스 만들기</div>
+          <form class="modal-content animate" action="/api/makeClass" method="post">
+            <div class="container">
+              <input type="text" placeholder="클래스 이름(필수)" name="className" required>
+              <input type="text" placeholder="제목" name="title" >
+              <input type="text" placeholder="강의실" name="roomName" >
+              <input type="number" placeholder="예정 인원" name="how_many" >
+              <div class="button_container">
+                <button type="button" onclick="document.getElementById('makeClass').style.display='none'" id="cancel_button">취소</button>
+                <button type="submit" id='classMake_button'>만들기</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
       
   </body>
   <footer>
@@ -134,3 +150,15 @@
       setTimeout(showSlides, 5500); // Change image every 2 seconds
   }
 </script>
+
+  <script>
+    function start(e){
+      var children = e.childNodes;
+      var childData = [];
+      for(var i=0; i<children.length; i++){
+          childData.push(children[i].innerText);
+      }
+      document.write('<form action="/classin" id="smb_form" method="post"><input type="hidden" id="childData" name="childData" value="'+ childData +'"></form>');
+      document.getElementById("smb_form").submit();
+    }
+  </script>
