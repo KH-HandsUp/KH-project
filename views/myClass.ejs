@@ -4,38 +4,140 @@
     
     <link rel='stylesheet' href='/stylesheets/myClassStyle.css' />
   </head>
-  <body>
-    <div class="top">
-        <img src="/images/logo.png" onClick="location.href='/'"  alt="Avatar" class="avatars">
-        <a class="menu1" onClick="location.href='/joinClass'">클래스 참여하기</a>
-        <a class="menu2" onClick="location.href='/createClass'">클래스 만들기</a>
-        <a class="menu3" onClick="location.href='/myClass'">내 클래스</a>
-        <a class="who_login">'000' 님, 어서오세요</a>
-    </div>
-    <div class="title">내 클래스</div>
+  <script>
+    // Get the 입력 폼+블러
+    var modalAndBlur = document.getElementsByClassName('blur');
 
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+    <script>
+      function start(e){
+        var children = e.childNodes;
+        var childData = [];
+        for(var i=0; i<children.length; i++){
+            childData.push(children[i].innerText);
+        }
+        document.write('<form action="/classin" id="smb_form" method="post"><input type="hidden" id="childData" name="childData" value="'+ childData +'"></form>');
+        document.getElementById("smb_form").submit();
+      }
+    </script>
+  <body>
+    <div class="header">
+        <img src="/images/logo.png" onClick="location.href='/'"  alt="Avatar" class="avatars">
+        <a class="menu1" onClick="document.getElementById('joinClass_code').style.display='block'" style="width:auto;" >클래스 참여하기</a>
+        <a class="menu2" onClick="document.getElementById('makeClass').style.display='block'" style="width:auto;" >클래스 만들기</a>
+        <a class="menu3" onClick="location.href='/myClass'">내 클래스</a>
+        <a class="who_login"><%=val.user_name%> 님, 어서오세요</a>
+      </div>
+    <div class="title">내 클래스</div>
     <div class="who_join">000 님이 참여중인 클래스 입니다.</div>
 
     <div class="search_box">
-        <a id="search_text">총 클래스 0 강</a>
+        <a id="search_text">총 클래스 <%=val.totla_class%> 강</a>
         <input name="search_word" type="search" placeholder="검색어를 입력하세요" id="search_input_box">
         <button id="search_button">검색</button>
     </div>
+
+    <!-- 클래스 리스트 -->
+    <div class="down">
+      <table class="lists">
+          <colgroup>
+          <col width="55%">
+          <col width="25%">
+          <col width="20%">
+        </colgroup>
+          <thead style="border-bottom: 3px solid #797979;">
+            <tr>
+              <th scope="col" >클래스 이름</th>
+              <th scope="col">선생님</th>
+              <th scope="col">참여 인원</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id= 'item'  style="cursor: pointer;" onclick="location.href='/classIn'">
+              <td class="class_name">눈누난나 야호 00시간</td>
+              <td class="teacher_name">000 선생님</td>
+              <td class="how_manu_stu">00 명</td>
+            </tr>
+            <% list.forEach(function(val){ %>
+              <tr id= 'item'  style="cursor: pointer;" onclick="start(this)">
+                <td class="class_name"><%=val.class_name%></td>
+                <td class="teacher_name"><%=val.teacher_name%></td>
+                <td class="how_manu_stu"><%=val.how_many_stu%></td>
+              </tr>
+            <% }) %>
+          </tbody>
+        </table>
+    </div>
+
     
-<!-- 
-    <div class="bottom">
-        <footer id = "huFoot" class="foot_hu">
-            <div class="inner_foot">
-            <img src="/images/Vector.png" class="link_logo">
-            <a class="tou">이용약관</a>
-            <a class="pp">개인정보처리방침</a>
-            <a class="ask">문의하기</a>
+  <!-- if문 써서 선생님인지 학생인지 확인 -->
+     <!-- 클래스 참여 코드 입력 폼 -->
+     <div id="joinClass_code" class="blur">
+      <div class="modal">
+        <div id="joinClass_code_text">클래스 참여하기</div>
+        <form class="modal-content animate" method="post">
+          <div class="container">
+            <div id='text1'>담당 선생님께 클래스 코드를 받아 입력하세요!</div>
+            <input type="text" placeholder="클래스 코드(필수)" name="classCode" required></br>
+            <div id='text2'>- 클래스 코드는 영어와 숫자가 혼합된 6글자 코드입니다.</div></br></br>
+            <div class="button_container">
+              <button type="button" onclick="document.getElementById('joinClass_code').style.display='none'" id="cancel_button">취소</button>
+              <button type="submit" id='joinClass_code_button'>참여하기</button>
             </div>
-      
-            <div class="info_policy">Team - KH</div>
-            <small class="txt_copyright">Copyright © HandsUp</small>
-      </footer>
-    </div> -->
-    
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+    <!-- 클래스 만들때 뜨는 폼 -->
+    <div id="makeClass" class="blur">
+      <div class="modal">
+        <div id="makeClass_text">클래스 만들기</div>
+        <form class="modal-content animate" action="/users/login" method="post">
+          <div class="container">
+            <input type="text" placeholder="클래스 이름(필수)" name="className" required>
+            <input type="text" placeholder="제목" name="title" >
+            <input type="text" placeholder="강의실" name="roomName" >
+            <input type="number" placeholder="예정 인원" name="how_many" >
+            <div class="button_container">
+              <button type="button" onclick="document.getElementById('makeClass').style.display='none'" id="cancel_button">취소</button>
+              <button type="submit" id='classMake_button'>만들기</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- if문 써서 선생님인지 학생인지 확인 -->
+
+
+
+  <footer>
+    <div class="inner-footer">
+      <div class="left-footer">
+        <a class="logo" href="/">
+          <img class="web" src="/images/LOGO.png">
+        </a>
+        <p class="teamname">Team - KH</p>
+        <p class="copyright">Copyright © HandsUp</p>
+       </div>
+       <div class="right-footer">
+          <a class="github" href="https://github.com/111111022/KH_project.git">
+            <img class="githubpic" src="/images/github.png">
+          </a>
+          <a class="agree1">이용약관</p>
+          <a class="agree2">개인정보처리방침</p>
+          <a class="agree3">문의하기</p>
+       </div>
+      </div>
+    </div>
+  </footer>
   </body>
 </html>

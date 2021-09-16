@@ -8,13 +8,83 @@
     <header>
       <div class="header">
         <img src="/images/logo.png" onClick="location.href='/'"  alt="Avatar" class="avatars">
-        <a class="menu1" onClick="location.href='/joinClass'">클래스 참여하기</a>
+        <!-- <a class="menu1" onClick="location.href='/joinClass'">클래스 참여하기</a>
         <a class="menu2" onClick="location.href='/createClass'">클래스 만들기</a>
-        <a class="menu3" onClick="location.href='/myClass'">내 클래스</a>
+        <a class="menu3" onClick="location.href='/myClass'">내 클래스</a> -->
         <a class="login" onClick="location.href='/login'">로그인</a>
         <a class="signUp" onClick="location.href='/signUp'">회원가입</a>
       </div>
-    </header>
+
+    <div class="slideshow-container">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 3</div>
+        <img src="/images/2.png" style="width:50%; height: 450px; border-radius: 30px;">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">2 / 3</div>
+        <img src="/images/1.png" style="width:50%; height: 450px; border-radius: 30px;">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">3 / 3</div>
+        <img src="/images/3.png" style="width:50%; height: 450px; border-radius: 30px;">
+      </div>
+      
+      </div>
+        
+      <br>
+      
+      <div class="dots" style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+
+      <div class='header1'>
+        <a class='opinion'><span style="color: black" >모든 학생의 의견을 </span><span style="color:#9C6FAE">한눈에</span>
+          <span style="color: black">알아보는 것,</span> </a>
+
+        <a class='handsUp'><span class='line'>Hands-Up!!</span></a>
+
+        
+      </div>
+      <a class='chatText'>채팅</a>
+      <a class='toiletText'>화장실</a>
+      <a class='handsText'>질문</a>
+      <a class='messageText'>답변</a>
+
+      <img src="/images/hands.png" onClick="location.href='/'"  alt="Avatar" class="hands">
+      <img src="/images/Rectangle 18.png" onClick="location.href='/'"  alt="Avatar" class="handsTxt">
+
+      <img src="/images/toilet.png" onClick="location.href='/'"  alt="Avatar" class="toilet">
+      <img src="/images/Rectangle 18.png" onClick="location.href='/'"  alt="Avatar" class="toiletTxt">
+
+      <img src="/images/message.png" onClick="location.href='/'"  alt="Avatar" class="message">
+      <img src="/images/Rectangle 18.png" onClick="location.href='/'"  alt="Avatar" class="messageTxt">
+
+      <img src="/images/chat.png" onClick="location.href='/'"  alt="Avatar" class="chat">
+      <img src="/images/Rectangle 18.png" onClick="location.href='/'"  alt="Avatar" class="chatTxt">
+
+
+      <a class='handsQ'>궁금한 게 생겼어요!</a>
+      <a class='toiletQ'>화장실에 가고 싶어요!</a>
+      <a class='messageQ'>이게 답인 거 같아요!</a>
+      <a class='chatQ'>직접 말하기가 어려워요!</a>
+
+      <a class='space'>우리 반 학생들만의 공간,</a>
+      <a class='class1'><span class='line2'>클래스</span></a>
+
+      <img src="/images/4.png" style="width:50%; height: 450px; border-radius: 30px;" class="classImg">
+
+      <a class='space1' ><span style='font-weight: 500;'>클래스를 통해</span></a>
+      <a class='class2'><span class='line3' style='font-weight: bolder;'>지난 수업의 결과</span ><span style='font-weight: 500;'>를 한눈에</span></a>
+
+      <img src="/images/5.png" style="width:50%; height: 450px; border-radius: 30px;" class="classImg1">
+
+
+      
   </body>
   <footer>
     <div class="inner-footer">
@@ -34,6 +104,29 @@
           <a class="agree3">문의하기</p>
        </div>
       </div>
-    </div>
+    </div> 
   </footer>
+  
 </html>
+
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5500); // Change image every 2 seconds
+  }
+</script>
