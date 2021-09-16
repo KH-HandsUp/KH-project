@@ -12,11 +12,13 @@ router.post("/login", async (req, res, next) => {
         user_id: req.body.user_id,
       },
     });
+    console.log(data);
     if (!data[0]) {
       res.send({ msg: "존재하지 않는 사용자 입니다." });
       return;
     }
-    const comparePassword = bcrypt.compare(data.password, req.body.password, () => {});
+    const comparePassword = bcrypt.compare(req.body.password, data.password);
+    console.log(comparePassword)
     if (comparePassword) {
       console.log("로그인 성공");
       req.session.isLogin = true;

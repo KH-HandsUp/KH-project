@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var Class = require("../models/Class")
+var Class = require("../models/Class");
+var getMyLesson = require("../util/getMyLesson");
 
 /* GET home page. */
 router.get('/:id', async (req, res, next) => {
@@ -9,6 +10,10 @@ router.get('/:id', async (req, res, next) => {
       id : req.params.id
     }
   });
+  const list = await getMyLesson(req.params.id);
+
+  console.log(list);
+
   res.render('classin', {
     name: req.session.name,
     isStudent: req.session.isStudent,
@@ -17,7 +22,7 @@ router.get('/:id', async (req, res, next) => {
       teacher_name:classData[0].teacherName,
       class_name:classData[0].name,
     },
-    list:[{className : "소프트웨어 공학", classDate:"10/16"},]
+    list:list,
   });
 });
 
