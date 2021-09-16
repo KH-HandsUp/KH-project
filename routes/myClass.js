@@ -10,9 +10,9 @@ router.get('/',async (req, res, next) => {
       user_id: req.session.user_id,
     },
   });
-  
-  
 
+  // console.log(user[0]);
+  
   const list = await FindMyClass(user[0].id);
   console.log(list);
   res.render('myClass',{

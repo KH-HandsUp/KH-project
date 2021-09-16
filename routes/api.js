@@ -3,7 +3,6 @@ const { User } = require("../models");
 const Class = require("../models/Class");
 const ClassUser = require("../models/ClassUser");
 var router = express.Router();
-var FindMyClass = require("../util/utils");
 
 router.post("/makeClass", async (req, res, next) => {
   console.log(req.body);
@@ -21,6 +20,7 @@ router.post("/makeClass", async (req, res, next) => {
       member: 1,
       limitMember: req.body.limitMember,
       code: code,
+      teacherName: user[0].name,
     });
 
     const clsdata = await Class.findAll({
@@ -55,7 +55,7 @@ router.post("/joinClass", async (req, res) => {
     }
     const user = await User.findAll({
       where: {
-        id: req.session.user_id,
+        user_id: req.session.user_id,
       },
     });
 
@@ -64,7 +64,7 @@ router.post("/joinClass", async (req, res) => {
       ClassId: cls[0].id,
     });
 
-    res.send({ msg: "성공" });
+    res.redirect("/");
   }
 });
 
