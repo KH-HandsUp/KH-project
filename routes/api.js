@@ -3,13 +3,14 @@ const { User } = require("../models");
 const Class = require("../models/Class");
 const ClassUser = require("../models/ClassUser");
 var router = express.Router();
+var FindMyClass = require("../util/utils");
 
 router.post("/makeClass", async (req, res, next) => {
   console.log(req.body);
   if (req.body.name && req.body.room && req.body.limitMember) {
     const user = await User.findAll({
       where: {
-        id: req.session.user_id,
+        user_id: req.session.user_id,
       },
     });
 
@@ -33,7 +34,7 @@ router.post("/makeClass", async (req, res, next) => {
       ClassId: clsdata[0].id,
     });
 
-    res.send({ msg: "완료" });
+    res.redirect("localhost:3000/myClass")
   } else {
     res.send("잘못된 정보");
   }
@@ -67,32 +68,6 @@ router.post("/joinClass", async (req, res) => {
   }
 });
 
-const FindMyClass = async (userId) => {
-  const Numbers = await ClassUser.findAll({
-    where: {
-      UserId: userId,
-    },
-  });
 
-  var list = [];
-  for (var i = 0; i < Numbers.length; i++) {
-    ele = Numbers[i];
-    const element = await Class.findAll({
-      where: {
-        id: ele.ClassId,
-      },
-    });
-    list[i] = element[0];
-  }
-
-  console.log(list);
-  return list;
-};
-
-router.post("/findPost", async (req, res) => {
-  const data = await FindMyClass(req.body.userid);
-  console.log(data);
-  res.json(data);
-});
 
 module.exports = router;
