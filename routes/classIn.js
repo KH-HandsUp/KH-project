@@ -5,6 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('classin', {
     name: req.session.name,
+    isStudent: req.session.isStudent,
     val: {
       user_code: "fxxmn6r",
       teacher_name:"김은애",

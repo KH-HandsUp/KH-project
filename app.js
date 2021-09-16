@@ -19,7 +19,7 @@ var answerRouter = require('./routes/answer');
 var chatRouter = require('./routes/chat');
 var classinRouter = require('./routes/classin');
 var chooseRouter = require('./routes/choose');
-// var chooseTeaRouter = require('./routes/choose');
+var pwdRouter = require('./routes/password');
 var answerRouter = require('./routes/answer');
 var apiRouter = require("./routes/api");
 
@@ -77,9 +77,12 @@ app.use('/signUp', signUpRouter);
 app.use('/answer', answerRouter);
 app.use('/chat', chatRouter);
 app.use('/classin', classinRouter);
-// app.use('/choose_tea', chooseTeaRouter);
 app.use('/choose', chooseRouter);
+
+app.use('/pwd', pwdRouter);
+
 app.use("/api", apiRouter);
+
 
 
 
