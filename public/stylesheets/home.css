@@ -603,7 +603,7 @@ input[type=text], input[type=number] {
     position: absolute;
     width: 140px;
     height: 140px;
-    left: 12%;
+    left: 12.3%;
     top: 856px;
 
     background: url(image.png);
@@ -613,7 +613,7 @@ input[type=text], input[type=number] {
     position: absolute;
     width: 127px;
     height: 51px;
-    left: 11.4%;
+    left: 11.7%;
     top: 1051px;
     filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25));
   }
@@ -622,7 +622,7 @@ input[type=text], input[type=number] {
     position: absolute;
     width: 80px;
     height: 43px;
-    left: 35.4%;
+    left: 35%;
     top: 1056px;
 
     font-family: Noto Sans KR;
@@ -642,7 +642,7 @@ input[type=text], input[type=number] {
     position: absolute;
     width: 372px;
     height: 46px;
-    left: -1%;
+    left: 0.2%;
     top: 1150px;
 
     font-family: Noto Sans KR;
@@ -669,7 +669,7 @@ input[type=text], input[type=number] {
     position: absolute;
     width: 127px;
     height: 51px;
-    left: 33.5%;
+    left: 33.2%;
     top: 1051px;
     filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25));
   }
@@ -693,15 +693,15 @@ input[type=text], input[type=number] {
 
   .messageText{
     position: absolute;
-    width: 60px;
+    width: 120px;
     height: 43px;
-    left: 58%;
+    left: 56%;
     top: 1056px;
 
     font-family: Noto Sans KR;
     font-style: normal;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 24px;
     line-height: 43px;
     display: flex;
     align-items: center;
@@ -715,12 +715,12 @@ input[type=text], input[type=number] {
     position: absolute;
     width: 140px;
     height: 140px;
-    left: 55%;
+    left: 55.5%;
     top: 856px;
 
     background: url(image.png);
   }
-
+  
   .messageTxt{
     position: absolute;
     width: 127px;
@@ -733,7 +733,7 @@ input[type=text], input[type=number] {
     position: absolute;
     width: 372px;
     height: 46px;
-    left: 43.5%;
+    left: 44%;
     top: 1150px;
 
     font-family: Noto Sans KR;
@@ -750,7 +750,7 @@ input[type=text], input[type=number] {
     position: absolute;
     width: 80px;
     height: 43px;
-    left: 81.3%;
+    left: 80.1%;
     top: 1056px;
 
     font-family: Noto Sans KR;
