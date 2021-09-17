@@ -30,7 +30,7 @@ const { sequelize } = require("./models");
 var app = express();
 
 sequelize
-  .sync({ force: false })
+  .sync({ force: true })
   .then(() => {
     console.log("데이터 베이스 연결 성공");
   })
